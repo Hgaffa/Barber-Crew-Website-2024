@@ -1,0 +1,87 @@
+/* Barber Crew Custom CSS */
+
+.owl-carousel .owl-stage,
+.owl-carousel.owl-drag .owl-item {
+    -ms-touch-action: auto;
+    touch-action: auto;
+}
+
+.bcrew-split-section {
+    .bcrew-text {
+        display: flex;
+        justify-content: center;
+        /* Align horizontal */
+        align-items: center;
+        /* Align vertical */
+        width: 60%;
+        vertical-align: middle;
+        padding-bottom: 40px;
+        h3 {
+            font-size: 40px;
+            font-weight: 500;
+            line-height: 1.1;
+            font-family: "Barlow Condensed", sans-serif;
+            text-transform: uppercase;
+        }
+    }
+    .bcrew-image {
+        display: inline-block;
+        max-width: 40%;
+    }
+    .bcrew-bold {
+        font-weight: 700;
+    }
+    .bcrew-mobile-only {
+        display: none;
+    }
+    @media screen and (max-width: 800px) {
+        .bcrew-image {
+            max-width: 80%;
+        }
+        .bcrew-text {
+            width: 100%;
+            padding: 0px 12px 40px 12px;
+            vertical-align: middle;
+            h3 {
+                font-size: 30px;
+            }
+        }
+        .bcrew-subheading {
+            text-align: center;
+        }
+        .bcrew-mobile-only {
+            display: inherit;
+        }
+        .bcrew-desktop-only {
+            display: none;
+        }
+    }
+}
+
+.bcrew-smooth-scroll {
+    scroll-behavior: smooth;
+}
+
+.bcrew-rrp {
+    color: red;
+    font-weight: 700;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.bcrew-gallery {
+    h3 {
+        color: white !important;
+    }
+}
+
+.bcrew-center {
+    align-items: center;
+}
+
+.bcrew-course {
+    display: flex;
+    padding-bottom: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+}

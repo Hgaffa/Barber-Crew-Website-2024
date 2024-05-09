@@ -1,0 +1,280 @@
+@font-face {
+    font-family: bebas-regular;
+    src: url('../fonts/Bebas-Regular.ttf');
+}
+
+.logo-small {
+    width: auto;
+    max-width: 200px;
+}
+
+@media screen and (max-width: 1000px) {
+    .logo-small {
+        max-width: 200px;
+    }
+}
+
+.logo-header {
+    max-width: 80%;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+
+/* Service Icons */
+
+.services-icon>img {
+    width: 25%;
+    padding-bottom: 10px;
+}
+
+
+/* Gallery Section */
+
+.gallery-section {
+    padding-top: 7em;
+}
+
+@media screen and (max-width: 1000px) {
+    .gallery-desktop {
+        display: none !important;
+    }
+}
+
+
+/* Location Map */
+
+.map {
+    position: relative;
+    text-align: center;
+}
+
+.locations-section {
+    padding: 7em 0 0 0;
+    position: relative;
+    width: 100%;
+}
+
+.location-map {
+    width: 100%;
+    height: 400px;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.map-button {
+    position: absolute;
+    bottom: 10%;
+    right: 50%;
+    margin: 0px -75px -15px 0px;
+}
+
+
+/* Custom locationdropdown */
+
+.location-dropdown {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+}
+
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px;
+    font-family: "bebas-regular";
+    /* demo only */
+}
+
+.custom-dropdown select {
+    cursor: pointer;
+    color: #0e2141;
+    border: 2px solid #000000;
+    background: #d7a75b;
+    width: 180px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: .5em;
+    padding-right: 2.5em;
+    margin: 0;
+    border-radius: 3px;
+    text-indent: 0.01px;
+    text-overflow: '';
+    -webkit-appearance: button;
+    /* hide default arrow in chrome OSX */
+}
+
+.custom-dropdown select[disabled] {
+    color: rgba(0, 0, 0, .3);
+}
+
+.custom-dropdown select[disabled]::after {
+    color: rgba(0, 0, 0, .1);
+}
+
+.custom-dropdown::before {
+    background-color: rgba(0, 0, 0, .15);
+}
+
+.custom-dropdown::after {
+    color: rgba(0, 0, 0, .4);
+}
+
+
+/* Booking pages */
+
+.widget-overflow {
+    overflow: auto;
+    max-height: 600px;
+    border: 1px solid black;
+}
+
+
+/* Banner */
+
+.desktop-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+
+.desktop-banner img {
+    position: absolute;
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 900px) {
+    .header-content {
+        display: inline-block;
+        width: 80%;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
+/* Booking Page Heading */
+
+.heading-booking {
+    font-size: 50px !important;
+}
+
+
+/* Partners Section */
+
+.partner {
+    width: 100%;
+    display: block;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+
+.parter-logo {
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.partner .position {
+    color: #d7a75b !important;
+}
+
+.vl {
+    float: left;
+    border-left: 5px solid #0e2141;
+    height: auto;
+    padding-right: 20px;
+}
+
+.card {
+    background-color: #213844;
+    margin-bottom: 3rem;
+}
+
+.card-title {
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    font-weight: 700;
+}
+
+.card-link {
+    color: white;
+}
+
+.job-description {
+    margin: 1rem;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.card-buttons {
+    float: right;
+    letter-spacing: 0.15rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: #d7a75b;
+    margin-top: 20px;
+}
+
+.card-text {
+    color: white;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+}
+
+.tags {
+    float: left;
+    margin-bottom: 0px;
+}
+
+span.tag {
+    background-color: #d7a75b;
+    color: #0e2141;
+    padding-left: 3px;
+    padding-right: 3px;
+    letter-spacing: 0.2rem;
+}
+
+.jobs {
+    max-width: 60%;
+    margin: auto;
+    padding-top: 0px;
+}
+
+.form-group.required .required-label:before {
+    content: "* ";
+    color: red;
+}
+
+@media screen and (max-width: 600px) {
+    .jobs {
+        max-width: 80%;
+        margin: auto;
+        padding-top: 0px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .tags {
+        width: 100%;
+    }
+    .card-buttons {
+        float: left;
+        margin-top: 0.5rem;
+        letter-spacing: 0.15rem;
+        font-size: 1rem;
+    }
+}
+
+.center-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
